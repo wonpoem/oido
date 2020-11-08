@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/web/img/common/m_ogtag_image.png">
+    <meta property="og:url" content="https://oidomuseum.siheung.go.kr/index.hs">
+
+    <meta name="theme-color" content="#ac8e63">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+
+    <link rel="shortcut icon" href="/web/img/favicon/fav.ico">
+    <link rel="canonical" href="https://oidomuseum.siheung.go.kr">
+
+    <link rel="stylesheet" href="/oido2/css/index.css">
+    <link rel="stylesheet" href="/oido2/css/default.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <title>오이도 선사 유적 공원</title>
+</head>
+
+
+<body>
+
+    <header id="header">
+        <div class="top_border">
+            <div class="top_menu clearfix">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">예약확인.취소</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="header_menu">
+                <h2><a href="#"><img src="/oido2/img/logo_w.png" alt="오이도로고"></a></h2>
+                <ul>
+                    <li><a href="#">시흥오이도박물관</a></li>
+                    <li><a href="#">오이도 선사유적공원</a></li>
+                    <li><a href="#">교육.행사</a></li>
+                    <li><a href="#">참여마당</a></li>
+                    <li><a href="#">오이도유적 소개</a></li>
+                </ul>
+                <div class="mobile">
+                    <a href="#"><i class="xi-bars xi-3x"></i></a>
+                </div>
+            </div>
+
+            <div class="sub_container">
+                <div class="header_submenu clearfix">
+                    <div class="menuback">
+                        <ul class="menu1">
+                            <li><a href="#"><span>관람안내</span></a></li>
+                            <li><a href="#"><span>상설전시실</span></a></li>
+                            <li><a href="#"><span>어린이체험실</span></a></li>
+                            <li><a href="#"><span>대관안내</span></a></li>
+                            <li><a href="#"><span>박물관로고</span></a></li>
+                            <li><a href="#"><span>오시는길</span></a></li>
+                        </ul>
+                        <ul class="menu2">
+                            <li><a href="#"><span>이용안내</span></a></li>
+                            <li><a href="#"><span>시설안내</span></a></li>
+                            <li><a href="#"><span>오시는길</span></a></li>
+                        </ul>
+                        <ul class="menu3">
+                            <li><a href="#"><span>교육프로그램</span></a></li>
+                            <li><a href="#"><span>교육.행사자료</span></a></li>
+                        </ul>
+                        <ul class="menu4">
+                            <li><a href="#"><span>공지사항</span></a></li>
+                            <li><a href="#"><span>언론보도</span></a></li>
+                            <li><a href="#"><span>FAQ</span></a></li>
+                            <li><a href="#"><span>자원봉사 신청</span></a></li>
+                            <li><a href="#"><span>갤러리</span></a></li>
+                        </ul>
+                        <ul class="menu5">
+                            <li><a href="#"><span>인사말</span></a></li>
+                            <li><a href="#"><span>소개</span></a></li>
+                            <li><a href="#"><span>조직도</span></a></li>
+                            <li><a href="#"><span>주변관광</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bg">
+                <div class="header_slider">
+                </div>
+            </div>
+        </div>
+        <div class="mobile_menu">
+            <ul>
+                <li><a href="#">시흥오이도박물관</a></li>
+                <li><a href="#">오이도 선사유적공원</a></li>
+                <li><a href="#">교육.행사</a></li>
+                <li><a href="#">참여마당</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">오이도유적소개</a></li>
+                <li><a href="#">예약확인/취소</a></li>
+            </ul>
+            <a href="#"><i class="xi-close xi-2x"></i></a>
+        </div>
+
+    </header>
+
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        //헤더 메뉴//
+
+        function responsive() {
+            var w = $(window).width();
+
+            if (w >= 900) {
+
+                $(".header_menu").hover(function() {
+
+                    $("header").addClass("on");
+                    $(".sub_container").stop().slideDown();
+
+                });
+
+
+                $(".sub_container").mouseleave(function() {
+
+                    $("header").removeClass("on");
+                    $(".sub_container").stop().slideUp();
+
+                });
+
+            }
+
+            if (w < 900) {
+                $(".header_menu").hover(function() {
+
+                    $("header").addClass("on");
+                    $(".sub_container").stop();
+
+                });
+                $(".header_menu").mouseleave(function() {
+
+                    $("header").removeClass("on");
+                    $(".sub_container").stop();
+
+                });
+
+            }
+
+        }
+
+        $(function() {
+            responsive();
+
+            $(window).resize(function() {
+                responsive();
+
+            });
+
+        });
+
+        // 모바일 사이드 메뉴 //
+
+        $(".mobile a").click(function() {
+            $('.mobile_menu').css({
+                'display': 'block'
+            });
+            $('.mobile_menu').css({
+                'right': '-100%'
+            });
+            $('.mobile_menu').animate({
+                right: '0px'
+            }, {
+                duration: 700
+            });
+
+        });
+
+        $(".mobile_menu > a").click(function() {
+            $('.mobile_menu').animate({
+                right: '-100%'
+            }, {
+                duration: 700,
+                complete: function() {
+                    $('.mobile_menu').css({
+                        'display': 'none'
+                    });
+                }
+            });
+
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>
